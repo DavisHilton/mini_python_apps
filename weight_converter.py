@@ -1,9 +1,12 @@
 #==== weight converter=========
+import math
+
+
 def convert_to_kg (weight):
-    return weight / 2.2
+    return round( weight / 2.2, 1)
 
 def convert_to_lbs (weight):
-    return weight * 2.2
+    return round( weight * 2.2, 1)
 
 weight = int(input ("What is your weight? "))
 unit = input("Is this in kg or pounds? ").lower()
